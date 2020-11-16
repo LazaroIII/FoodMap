@@ -1,10 +1,9 @@
 
 import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Marker from './Pin';
+import Pin from './Pin';
 
 const SimpleMap = ({ lati, longi, obse }) => {
-  console.log('map',lati)
     const [center] = useState({lat: Number(lati), lng: Number(longi) });
     const [zoom] = useState(15);
     return (
@@ -14,7 +13,7 @@ const SimpleMap = ({ lati, longi, obse }) => {
           defaultCenter={center}
           defaultZoom={zoom}
         >
-          <Marker
+          <Pin
             lat={lati}
             lng={longi}
             text={obse}

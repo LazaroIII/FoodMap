@@ -2,14 +2,14 @@
 import React from 'react';
 import './Map.css';
 
-const Marker = (props: any) => {
-    const { color, name} = props;
+const Pin = (props: any) => {
+    const { color, name } = props;
     return (
-      <div className="marker"
+      <div className="pin"
         style={{ backgroundColor: color, cursor: 'pointer'}}
         title={name}
       />
     );
   };
 
-  export default Marker;
+  export default Pin;
